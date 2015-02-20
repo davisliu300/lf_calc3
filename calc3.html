@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html> 
+	<head> 
+		<script src = "calc3.js"></script>
+		<link rel = "stylesheet" href = "calc3.css" type = "text/css">
+	</head> 
+<body> 
+
+
+<div class = "display"> 
+	<input type = "text" id = "input" placeholder = "input" disabled><br> 
+	<input type = "text" id = "result" placeholder = "result" ><br>
+	<button type = "button" class = "btn_operator" onclick = "add_operator('+');"> + </button> 
+	<button type = "button" class = "btn_operator" onclick = "add_operator('-');"> - </button> 
+	<button type = "button" class = "btn_operator" onclick = "add_operator('*');"> * </button> 
+	<button type = "button" class = "btn_operator" onclick = "add_operator('/');"> / </button>
+	<button type = "button" class = "btn_operator" onclick = "add_operator('^')">^</button>
+	<button type = "button" class = "btn_operator" onclick = "negative_operator('-')">+/-</button>	<br />
+	<button type = "button" id = "calculate" onclick = "process_equation()"> = </button> 
+	<button type = "button" id = "cancel_it" onclick = "clear_fields()"> cancel it</button> 
+	<button type = "button" id = "reset_total" onclick = "reset_total()"> reset them</button> 
+
+	
+</div> 
+
+<div class = "number_keys"> 
+	<button type = "button" onclick = "add_number('1')">1</button>
+	<button type = "button" onclick = "add_number('2')">2</button>
+	<button type = "button" onclick = "add_number('3')">3</button><br />
+	<button type = "button" onclick = "add_number('4')">4</button>
+	<button type = "button" onclick = "add_number('5')">5</button>
+	<button type = "button" onclick = "add_number('6')">6</button><br />
+	<button type = "button" onclick = "add_number('7')">7</button>
+	<button type = "button" onclick = "add_number('8')">8</button>
+	<button type = "button" onclick = "add_number('9')">9</button></br />
+	<button type = "button" onclick = "add_number('0')">0</button>
+	<button type = "button" onclick = "add_number('.')">.</button>
+
+<!--    	<button type = "button" onclick = "add_number('')"></button> -->
+
+	
+</div>
+
+
+</body> 
+
+
+
+
+</html> 
